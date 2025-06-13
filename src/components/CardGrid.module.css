@@ -1,0 +1,18 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
